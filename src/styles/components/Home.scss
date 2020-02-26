@@ -1,0 +1,47 @@
+@import "../constants";
+@import "../lib/jbarinas/layout/mixins/index";
+
+#Home {
+    position: relative;
+    padding: 0 0 1.618rem;
+
+    & > header {
+        @include --layout-vertical;
+        @include --layout-end-justified;
+
+        height: 219px;
+        margin-bottom: 51px;
+        // background-image: url(../images/bg-header.jpg);
+        background-color: #000;
+        // background-image: url(../images/BLG_ChampioningDiversity.png);
+        // background-image: url(../images/BLG_Hero_Image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        h1, h3, p, div {
+            text-align: center;
+        }
+
+        div {
+            position: relative;
+            bottom: -21px;
+
+            div {
+                top: -20px;
+                position: relative;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    p {
+        padding: 0 map-get($map: $padding, $key: horizontal);
+        text-align: center;
+
+        @media (min-width: map-get($map: $breakpoints, $key: lg)) {
+            max-width: map-get($map: $breakpoints, $key: lg);
+            margin: 0 auto;
+        }
+    }
+}
+

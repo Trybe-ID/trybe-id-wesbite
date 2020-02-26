@@ -1,0 +1,11 @@
+@import "../constants";
+
+#ProductDevelopmentServices {
+    text-align: center;
+    max-width: $max-width;
+    margin: 2rem auto;
+
+    a {
+        font-weight: 700;
+    }
+}

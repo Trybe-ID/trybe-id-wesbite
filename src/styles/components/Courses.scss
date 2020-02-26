@@ -1,0 +1,166 @@
+@import "../constants";
+@import "../lib/jbarinas/layout/mixins/index";
+
+#Courses {
+
+    @include --layout-vertical;
+    @include --layout-center;
+
+    background-image: url(../images/BLG_Courses.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & > header, & > footer {
+        max-width: 960px;
+    }
+
+    & > header {
+        margin-bottom: 1.618rem;
+
+        h3, ul, li, header, footer, div {
+            text-align: center;
+        }
+
+        h4, p {
+            text-align: left;
+            margin: 0rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        // & > p {
+        //     margin-bottom: 2rem;
+        // }
+
+        ul {
+            li {
+                @include --layout-vertical;
+
+                min-width: 320px;
+                color: #212121;
+                background-color: #fff;
+                padding: 1.618rem 1rem;
+                margin-bottom: 4rem;
+
+                & > header {
+                    color:#007395;
+                    margin-bottom: 0.618rem;
+                }
+
+                & > div {
+                    @include --layout-flex;
+                }
+
+                & > footer {
+                    height: 0;
+
+                    a {
+                        position: initial;
+                        bottom: -50px;
+                    }
+                }
+            }
+        }
+    }
+
+    & > footer {
+        & > ul {
+            & > li {
+                overflow: hidden;
+
+                div.wrapper {
+                    header {
+                        position: relative;
+                        top: -50px;
+                        margin: 0 2.5rem 5rem;
+
+                        & > h4 {
+                            width: 100%;
+                            position: absolute;
+                            background-color: map-get($map: $colors, $key: blue);
+                            padding: 1.618rem;
+                            box-sizing: border-box;
+                        }
+                    }
+
+                    footer {
+                        color: #212121;
+                        background-color: #fff;
+                        padding: 7rem 1rem 0.382rem;
+                        margin: 75px 0rem 1.618rem;
+
+                        h5 {
+                            font-weight: 700;
+                        }
+
+                        dl {
+                            margin-bottom: 1rem;
+                            dt {
+                                float:left;
+                                color: map-get($map: $colors, $key: blue);
+                                //font-weight: 300;
+                                padding-right: 0.618rem;
+                            }
+                            dd {
+                                margin-bottom: 0.382rem;
+                            }
+                        }
+
+                        ul {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+}
+
+@media (min-width: 480px) {
+    #Courses {
+        & > footer {
+            & > ul {
+                & > li {
+                    div.wrapper {
+                        footer {
+                            padding: 5rem 1rem 0.382rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 840px) {
+
+    #Courses {
+        & > header {
+            ul {
+                @include --layout-horizontal;
+                @include --layout-center-justified;
+
+                li {
+                    @include --layout-flex;
+                    margin: 0 1rem;
+                    max-width: 480px;
+                }
+            }
+        }
+
+        & > footer {
+            & > ul {
+                padding: 3rem 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import "../lib/jbarinas/layout/mixins/index";
+
+#ContactUs {
+    overflow: hidden;
+    padding: 1.618rem 1rem;
+    background-image: linear-gradient(-172deg, rgba(73,150,174,0.78) 0%, rgba(59,66,68,0.00) 0%, rgba(6,114,148,0.78) 0%, rgba(12,117,150,0.80) 23%, #0B1417 74%);
+
+    & > * {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    address, div, strong {
+        text-align: center;
+    }
+
+    div.logos {
+        @include --layout-vertical;
+        @include --layout-center-center;
+
+        @media (min-width: 600px) {
+            @include --layout-horizontal;
+            @include --layout-around-justified;
+        }
+    }
+
+    address {
+        a {
+            line-height: initial;
+            text-transform: initial;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .social {
+        @include --layout-horizontal;
+        @include --layout-center-center;
+
+        margin: 1.618rem auto;
+
+        a {
+            width: 44px;
+            height: 44px;
+            margin: 0 0.618rem;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .linkedin {
+            background-image: url(../svg/linkedin-square.svg);
+        }
+        .twitter {
+            background-image: url(../svg/twitter-square.svg);
+        }
+        .github {
+            background-image: url(../svg/github-square.svg);
+        }
+    }
+}
+

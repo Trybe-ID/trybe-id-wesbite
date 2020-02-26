@@ -1,0 +1,126 @@
+@import "../lib/jbarinas/layout/mixins/index";
+@import "@material/elevation/mdc-elevation";
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    15% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+    30% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+$slide-max-width: 720px;
+
+#Clients {
+    @include --layout-vertical;
+    @include --layout-center-center;
+
+
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+    padding: 1.618rem 0;
+
+    & > footer {
+        color: #212121;
+        background-color: #fff;
+        position: relative;
+        max-width: $slide-max-width;
+
+        & > .mobile {
+            @include --layout-vertical;
+            @include --layout-center-center;
+
+            & > div {
+                padding: 1rem 1.618rem;
+                img {
+                    max-width: 100%;
+                    max-height: 100px;
+                }
+            }
+        }
+
+        & > .not-mobile {
+            display: none;
+
+            ul {
+                @include --layout-horizontal;
+
+                li {
+                    padding: 16px 32px;
+
+                    &.blg--invisible {
+                        display:none;
+                    }
+
+                    & > div:first-child {
+                        padding: 1rem 2rem 1rem 0;
+
+                        img {
+                            height: 125px;
+                        }
+                    }
+
+                    & > div:last-child {
+                        footer {
+                            h4 {
+                                margin: 0;
+
+                                div:first-child {
+                                    margin-bottom: 0.618rem;
+                                }
+
+                                small {
+                                    font-size: 0.9rem;
+                                    line-height: 0.9rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 480px) {
+            overflow: hidden;
+            box-sizing: border-box;
+
+            & > .mobile {
+                display: none;
+            }
+
+            & > .not-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 480px) {
+            ul {
+                li {
+                    width: 100vw;
+                    height: 515px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        @media (min-width: $slide-max-width) {
+            ul {
+                li {
+                    @include --layout-horizontal;
+
+                    width: $slide-max-width;
+                    height: 390px;
+
+                    &.show {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

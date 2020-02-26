@@ -1,0 +1,36 @@
+@import "../lib/jbarinas/layout/mixins/index";
+
+#Diversity {
+    @include --layout-vertical;
+    @include --layout-center;
+
+    & > header, & > footer {
+        max-width: 960px;
+    }
+
+    h3, p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 840px) {
+    #Diversity {
+        & > footer {
+            @include --layout-horizontal;
+
+            padding: 4rem;
+            box-sizing: border-box;
+            background-image: url(../images/BLG_ChampioningDiversity.png);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            & > div {
+                @include --layout-flex;
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

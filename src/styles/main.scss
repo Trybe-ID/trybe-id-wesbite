@@ -1,0 +1,23 @@
+$link-color: #067294;
+
+@import "./lib/jbarinas/reset/style-reset";
+@import "./lib/jbarinas/layout/classes/index";
+
+@import "./lib/blg/blg-button";
+
+@import "./App";
+@import "./components/_common";
+@import "./components/AboutUs";
+@import "./components/Advisors";
+@import "./components/Clients";
+@import "./components/ContactUs";
+@import "./components/Courses";
+@import "./components/Diversity";
+@import "./components/Home";
+@import "./components/ProductDevelopmentServices";
+@import "./components/Team";
+
+$mdc-theme-primary: #fff;
+
+@import "@material/elevation/mdc-elevation";
+@import "@material/toolbar/mdc-toolbar";

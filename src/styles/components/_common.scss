@@ -1,0 +1,6 @@
+@import "../constants";
+
+#Advisors, #Courses, #ContactUs, #Diversity, #Home, #ProductDevelopmentServices, #Team {
+    overflow: hidden;
+    padding: map-get($map: $padding, $key: vertical) map-get($map: $padding, $key: horizontal);
+}

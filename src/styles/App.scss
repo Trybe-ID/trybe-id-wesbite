@@ -1,0 +1,126 @@
+@import "./constants";
+@import "./lib/jbarinas/layout/mixins/index";
+
+* {
+    cursor: default !important;
+    line-height: 20px;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px !important;
+}
+
+a {
+    color: map-get($map: $colors, $key: blue);
+    cursor: pointer !important;
+}
+
+body {
+    @include --layout-fullbleed;
+    #root {
+        @include --layout-fit;
+        #App {
+            @include --layout-fit;
+            @include --layout-vertical;
+            & > main {
+                @include --layout-flex;
+                position: relative;
+                div.blg--main-wrapper {
+                    @include --layout-fit;
+                    overflow-y: scroll;
+                }
+            }
+        }
+    }
+}
+
+#App {
+    & > header {
+
+        color: #000;
+        background-color: #fff;
+        z-index: 1001;
+
+        div.--blg-wrapper {
+            @include --layout-horizontal;
+
+            max-width: 960px;
+            margin: auto;
+            padding: 0.618rem 1rem;
+
+            .logo {
+                background-image: url(../images/trybeid.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 48px;
+                width: 138.13px;
+            }
+
+            .menu {
+                @include --layout-flex;
+                @include --layout-horizontal;
+                @include --layout-center;
+                @include --layout-end-justified
+            }
+
+            ul {
+                display: none;
+                z-index: 1001;
+
+                &.show {
+                    @include --layout-vertical;
+                    @include --layout-center-center;
+                    @include --layout-fixed-top;
+                    @include --layout-fixed-bottom;
+
+                    display: block;
+                    padding: 1.618rem;
+                    background-color: rgba(0, 0, 0, 0.87);
+
+                    li {
+                        text-align: center;
+                        a {
+                            display: inline-block;
+                            padding: 0.618rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #App {
+        & > header {
+            div.--blg-wrapper {
+                .menu {
+                    display: none;
+                }
+
+                ul {
+                    @include --layout-flex;
+                    @include --layout-horizontal;
+                    @include --layout-center;
+                    @include --layout-end-justified;
+
+                    li {
+                        margin-left: 1.618rem;
+                    }
+                }
+            }
+        }
+    }
+}

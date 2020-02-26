@@ -1,0 +1,29 @@
+{
+    "name": "trybe-id-website",
+    "private": true,
+    "version": "0.1.0",
+    "main": "src/index.js",
+    "description": "Trybe.ID",
+    "homepage": "https://trybe.id",
+    "repository": "https://github.com/Trybe-ID/trybe-id-wesbite",
+    "scripts": {
+        "watch-scss": "node-sass --include-path node_modules --watch --recursive src/styles/main.scss public/styles/main.css",
+        "deploy": "gh-pages -d build --branch master",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom"
+    },
+    "devDependencies": {
+        "eslint": "^4.18.2",
+        "eslint-plugin-react": "^7.7.0",
+        "node-sass": "^4.7.2",
+        "react-scripts": "^1.1.1"
+    },
+    "dependencies": {
+        "@jbarinas/styles-base": "github:jbarinas/styles-base",
+        "material-components-web": "^0.32.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-router-dom": "^4.3.1"
+    }
+}

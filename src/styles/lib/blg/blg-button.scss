@@ -1,0 +1,18 @@
+.blg-btn {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    text-align: center;
+
+    user-select: none;
+
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 0.618rem 1.618rem;
+    box-shadow: 0 2px 50px 0 #7ED321, 0 2px 50px 0 rgba(0,0,0,0.50);
+    background: #7ED321;
+}

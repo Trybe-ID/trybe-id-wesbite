@@ -1,0 +1,124 @@
+@import "../lib/jbarinas/layout/mixins/index";
+
+$img-height: 100px;
+
+
+#Team, #Advisors {
+    color: #fff;
+    background-color: #0B1517;
+
+    @include --layout-vertical;
+    @include --layout-center;
+
+    & > header, & > ul {
+        max-width: 840px;
+    }
+
+    & > header {
+        margin-bottom: 1.618rem;
+
+        h3, p {
+            text-align: center;
+        }
+    }
+
+    & > ul {
+        li {
+            margin-bottom: 3rem;
+
+            header {
+                text-align: center;
+                div {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                span.avatar {
+                    background-color: rgba(0, 0, 0, 0.38);
+
+                    display: inline-block;
+                    width: $img-height;
+                    height: $img-height;
+                    margin: 0;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        width: $img-height;
+                    }
+                }
+
+                span.linkedin {
+                    @include --layout-vertical;
+                    @include --layout-center-center;
+
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 50%;
+                    border: 2px solid rgba(0, 0, 0, 0.38);
+                    overflow: hidden;
+                    background-color: #fff;
+
+                    a {
+                        display: block;
+                        width: 75%;
+                        height: 75%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url(../svg/linkedin.svg);
+                    }
+                }
+            }
+            footer {
+                text-align: center;
+                h4 {
+                    div:first-child {
+                        font-weight: 900;
+                    }
+                    div:nth-child(2) {
+                        color: #067294;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 840px) {
+
+    #Team, #Advisors {
+        & > ul {
+            li {
+                @include --layout-horizontal;
+
+                padding-right: 1.618rem;
+                margin-bottom: 2rem;
+
+                header {
+                    padding: 1rem 1.618rem;
+
+                    span {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                footer {
+                    text-align: left;
+
+                    h4 {
+                        margin-bottom: 0.618rem;
+                    }
+                    aside {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
