@@ -34,6 +34,30 @@ export default class extends React.Component {
                         <header>
                             <div>
                                 <span className="avatar">
+                                    <img alt="" src="images/profiles/Kim.jpg" />
+                                </span>
+                            </div>
+                        </header>
+                        <footer>
+                            <h4>
+                                <div>Kim Cameron</div>
+                                <div>Chief Identity Officer</div>
+                            </h4>
+                            <aside>
+                                <p>
+                                Kim Cameron is a Canadian computer scientist and engineering leader who has worked since the emergence of the Internet to create a humanistic system of Digital Identity. Kim moved to Seattle to join Microsoft in 1999 when it acquired Toronto-based Zoomit Corporation, a software company dedicated to digital identity that he co-founded in 1980. In 2000 he became the Architect of Microsoft’s Active Directory, which evolved into the most widely deployed identity technology used in enterprises globally. As the growth of the Internet made the importance of identity increasingly evident, his role expanded to become Chief Architect of Identity for Microsoft, a position he held until his retirement in 2019.
+                                <br />
+                                <br />
+                                Kim led Microsoft to build technology that was part of an “identity metasystem” that worked across vendors, technologies and political boundaries. He introduced the concept of “claims” so the system could handle a world where the assertions of different entities were trusted for different things and to different extents – a major building block for what became cloud computing. In 2004 he wrote the Laws of Identity, a document that has long influenced both technologists and regulators, and which Microsoft adopted to guide its innovation. At the same time he began to champion innovations that would put users in control of their own identity as a way to solve the privacy and security problems of both individuals and organizations – work he continues to advance today.
+                                </p>
+                            </aside>
+                        </footer>
+                    </li>
+
+                    <li>
+                        <header>
+                            <div>
+                                <span className="avatar">
                                     <img alt="" src="images/profiles/Erik.png" />
                                 </span>
                             </div>
