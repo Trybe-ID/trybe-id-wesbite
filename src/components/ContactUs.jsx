@@ -5,16 +5,22 @@ export default class extends React.Component {
         return (
             <section id="ContactUs">
                 <address>
-                    <div>Looking to find out more information please feel free to reach out directly at: 
+                    <div>
+                        Looking to find out more information please feel free to reach out directly at: 
                         <br />
-                        contactus@convergence.tech
+                        adam@trybe.id
                         <br />
-                        <strong><a href="https://convergence.tech">Convergence.tech</a></strong>
                     </div>
                     <div className="logos">
                         <div>
                             <img alt="trybe.id" src="images/white-trybeID.png" style={{ height: '70px', padding: '0.618rem 1rem' }} />
                         </div>
+                    </div>
+                    <div>
+                        If you have a keen interest to explore how Trybe.ID and related digital technologies can be utilized within your 
+                        organzation feel free to reach out to our sister company Convergence.tech at ContactUs@convergence.tech
+                        <br />
+                        <strong><a target="_blank" href="https://convergence.tech">https://Convergence.tech</a></strong>
                     </div>
                 </address>
                 {/* <div className="social">
