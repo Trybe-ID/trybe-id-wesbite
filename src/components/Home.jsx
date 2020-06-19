@@ -22,7 +22,7 @@ export default class extends React.Component {
                         <a href="#Courses" className="blg-btn" onClick={this.scrollTo.bind(this)}>LEARN MORE</a>
                         <div />
                         <div />
-                        <a className="blg-btn" onClick={() => window.open('https://trybe.id/express-interest')}>GET INVOVLED</a>
+                        <a className="blg-btn" onClick={() => window.open('https://trybe.id/express-interest')}>GET INVOLVED</a>
                     </div>
                 </header>
                 <footer>

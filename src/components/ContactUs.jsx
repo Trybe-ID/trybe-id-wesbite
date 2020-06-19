@@ -18,7 +18,7 @@ export default class extends React.Component {
                     </div>
                     <div>
                         If you have a keen interest to explore how Trybe.ID and related digital technologies can be utilized within your 
-                        organzation feel free to reach out to our sister company Convergence.tech at ContactUs@convergence.tech
+                        organization feel free to reach out to our sister company Convergence.tech at ContactUs@convergence.tech
                         <br />
                         <strong><a target="_blank" href="https://convergence.tech">https://Convergence.tech</a></strong>
                     </div>
