@@ -79,6 +79,48 @@ export default class extends React.Component {
                         <header>
                             <div>
                                 <span className="avatar">
+                                    <img alt="" src="images/profiles/team-josh-t.png" />
+                                </span>
+                            </div>
+                        </header>
+                        <footer>
+                            <h4>
+                                <div>Josh Truman</div>
+                                <div>Vice President of Partnerships</div>
+                            </h4>
+                            <aside>
+                                <p>
+                                As Vice President of Partnerships, Josh Truman is responsible for driving strategic growth for Convergence.tech, with a focus on growing the company’s client base in all segments of the market. Josh brings to the position a successful track record of more than 10 years that includes leadership positions and recognized sales achievements in the educational technology industry. Josh specializes in forming strategic alliances and programs that add value to the customer relationship. Prior to joining Convergence.tech, Josh most recently oversaw sales for Discovery Education and EdTechTeam, where he nurtured key relationships and engendered strategic partnerships that led to significant revenue growth. As a former teacher and school administrator, Josh is excited to continue helping organizations use technology more effectively.
+                                </p>
+                            </aside>
+                        </footer>
+                    </li>
+
+                    <li>
+                        <header>
+                            <div>
+                                <span className="avatar">
+                                    <img alt="" src="images/profiles/team-maryam-n.jpg" />
+                                </span>
+                            </div>
+                        </header>
+                        <footer>
+                            <h4>
+                                <div>Maryam Nizam</div>
+                                <div></div>
+                            </h4>
+                            <aside>
+                                <p>
+                                Maryam is an operations and growth leader with a proven track record and extensive experience in growth stage and startup organizations across diverse industries. In her most recent role as Senior Vice President of Operations at Citco Fund Services, the world’s leading Alternative Investment Fund Administrator, Maryam was responsible for managing customer success and acquisition while also driving process transformation and product innovation to scale and optimize operational capacity. Being a lover of all things food and an avid follower of emerging technologies, Maryam co-founded The Revolving Kitchen, a digital market place that automates the commercial kitchen rental process and connects aspiring food entrepreneurs with established players in the restaurant industry. Maryam has a Bachelor of Arts in Economics & International Relations from the University of Toronto and a Master in Business Administration from York University & Northwestern University.
+                                </p>
+                            </aside>
+                        </footer>
+                    </li>
+
+                    <li>
+                        <header>
+                            <div>
+                                <span className="avatar">
                                     <img alt="" src="images/profiles/Adam.jpg" />
                                 </span>
                             </div>
