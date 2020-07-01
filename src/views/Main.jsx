@@ -63,7 +63,7 @@ export default class extends React.Component {
                             </li> */}
                             <li>
                                 <a href="#Team" onClick={this.scrollTo.bind(this)}>
-                                    Team
+                                    Leadership
                                 </a>
                             </li>
                             {/* <li>
