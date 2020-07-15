@@ -5,7 +5,7 @@ export default class extends React.Component {
         return (
             <section id="Team">
                 <header>
-                    <h3>Leaderhsip</h3>
+                    <h3>Leadership</h3>
                 </header>
 
                 <ul>
