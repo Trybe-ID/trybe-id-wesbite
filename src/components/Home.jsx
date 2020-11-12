@@ -15,6 +15,7 @@ export default class extends React.Component {
             <section id="Home">
                 <header>
                     <h1>Trybe.ID</h1>
+                    <p><strong>("Tribe Identity")</strong></p>
                     <p>
                         A platform that is fundamentally reshaping the way credentials and relationships are managed online.
                     </p>
